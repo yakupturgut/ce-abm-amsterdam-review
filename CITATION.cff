@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript after publication."
+title: "Amsterdam circular-economy agent-based model"
+authors:
+  - name: "Anonymous Authors"
+year: 2026
+version: "anonymous-review"

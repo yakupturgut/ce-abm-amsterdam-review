@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated outputs
+results/runs/*
+results/experiments/*
+results/figures/*
+results/tables/*
+!results/**/.gitkeep
+!results/README.md
+
+# Temporary files
+*.tmp
+*.log

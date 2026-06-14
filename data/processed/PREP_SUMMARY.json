@@ -1,0 +1,29 @@
+{
+  "version": "preprocess_v13.1",
+  "crs": "EPSG:28992",
+  "grid": 60,
+  "seed": 0,
+  "patch_counts": {
+    "EMPTY": 2466,
+    "PRIMARY": 250,
+    "SECONDARY": 834,
+    "WASTE": 4,
+    "HUB": 46
+  },
+  "hubs": 47,
+  "wastes": 4,
+  "containers": 27456,
+  "recycling_centres": 6,
+  "hub_fraction_hist": {
+    "RepairCafe": 46
+  },
+  "agents_created": 4000,
+  "initial_wealth_mean": 83.67387260072711,
+  "initial_recog_mean": 0.28486369206397344,
+  "initial_household_size_mean": 2.117,
+  "recognition_initialization": "Neutral Beta distribution independent of income",
+  "bbga": {
+    "pop_nonempty": true,
+    "income_used": "LogNormal (BBGA Weighted)"
+  }
+}
