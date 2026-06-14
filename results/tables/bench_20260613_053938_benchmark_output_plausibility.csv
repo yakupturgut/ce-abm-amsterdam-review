@@ -1,0 +1,18 @@
+check,value,status,interpretation
+k1_mean_local_ce_activation_within_bounds,0.000000--0.049034,ok,"K1 is the spatial average of a normalized local CE-activation field and should remain within [0,1]."
+k2_flow_based_cei_within_model_bounds,0.000000--0.644877,ok,K2 is the flow-based citywide CE index and should remain non-negative and within the implementation bounds.
+k3_ce_flow_counts_non_negative,0.000000--4024.625000,ok,Monthly CE-flow counts should not be negative.
+D_adv_exposure_within_gini_bounds,0.0290--0.1949,ok,Gini-type indicators should remain on a non-negative bounded support.
+D_resources_within_gini_bounds,0.0000--0.7788,ok,Gini-type indicators should remain on a non-negative bounded support.
+unemployment_within_model_bounds,0.0903--0.1000,ok,Unemployment should remain within the bounds imposed by the model.
+linear_reference_k1_near_zero,0.000000,ok,Mean local CE activation should be near zero when CE mechanisms are disabled.
+linear_reference_k2_near_zero,0.000000,ok,The flow-based CE index should be near zero when CE mechanisms are disabled.
+MEAN_LOCAL_CE_ACTIVATION_scenario_ordering_diagnostic,Light=0.0237; Baseline=0.0188; Targeted=0.0188,diagnostic,"K1 mean local CE activation is expected to increase under stronger CE support, subject to scenario design and stochastic variation."
+CEI_SIM_scenario_ordering_diagnostic,Light=0.5635; Baseline=0.6190; Targeted=0.6416,diagnostic,"K2 flow-based CE index is expected to increase under stronger CE support, subject to scenario design and stochastic variation."
+targeted_unemployment_vs_linear_reference,Linear=0.1000; Targeted=0.0904,diagnostic,"Under negative beta_CEI, stronger flow-based CE activity should tend to reduce unemployment relative to the linear reference."
+source_column_for_CEI_SIM,CEI_SIM,metadata,Column used when reading canonical KPI metrics from MASTER_metrics.csv files.
+source_column_for_D_adv_exposure,D_adv_exposure,metadata,Column used when reading canonical KPI metrics from MASTER_metrics.csv files.
+source_column_for_D_resources,D_resources,metadata,Column used when reading canonical KPI metrics from MASTER_metrics.csv files.
+source_column_for_MEAN_LOCAL_CE_ACTIVATION,MEAN_LOCAL_CE_ACTIVATION,metadata,Column used when reading canonical KPI metrics from MASTER_metrics.csv files.
+source_column_for_TRADES_COUNT_M,TRADES_COUNT_M,metadata,Column used when reading canonical KPI metrics from MASTER_metrics.csv files.
+source_column_for_UNEMPLOYMENT,UNEMPLOYMENT,metadata,Column used when reading canonical KPI metrics from MASTER_metrics.csv files.

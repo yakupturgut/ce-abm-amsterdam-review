@@ -1,0 +1,16 @@
+{
+  "benchmark_run_group": "bench_20260613_053938",
+  "source_replicated_run_group": "r20260612_134238",
+  "input_summary_csv": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\bench_20260613_053938_benchmark_input_summary.csv",
+  "output_checks_csv": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\bench_20260613_053938_benchmark_output_plausibility.csv",
+  "figures_dir": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\figures\\bench_20260613_053938\\benchmarking",
+  "kpi_alignment": {
+    "K1": "MEAN_LOCAL_CE_ACTIVATION; backward-compatible alias CE_INTENSITY",
+    "K2": "CEI_SIM; flow-based citywide CE throughput index",
+    "K3": "TRADES_COUNT_M; CE-flow count diagnostic",
+    "K4": "UNEMPLOYMENT",
+    "K5": "D_adv_exposure",
+    "K6": "D_resources"
+  },
+  "interpretation": "These checks provide verification, initialization benchmarking, and output-plausibility diagnostics. They are not predictive validation."
+}

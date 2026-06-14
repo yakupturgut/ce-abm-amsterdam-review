@@ -1,0 +1,18 @@
+{
+  "mode": "sequential",
+  "min_reps": 10,
+  "max_reps": 100,
+  "check_every": 5,
+  "final_reps": 100,
+  "stopped_by_criterion": false,
+  "rel_ci_tol": 0.05,
+  "abs_ci_tol": 0.0001,
+  "convergence_metrics": [
+    "MEAN_LOCAL_CE_ACTIVATION",
+    "CEI_SIM",
+    "UNEMPLOYMENT",
+    "D_adv_exposure",
+    "D_resources",
+    "MEAN_RESOURCES"
+  ]
+}

@@ -1,0 +1,73 @@
+run_group,scenario,scenario_label,case,parameter,parameter_value,metric,metric_label,last_mean,full_model_last_mean,difference_from_full_model,relative_difference_from_full_model
+scr_0613_0539,baseline,Baseline CE,Full model,full_model,,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.018009254469126015,0.018009254469126015,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,Full model,full_model,,CEI_SIM,K2 flow-based citywide CE index,0.6191046847505338,0.6191046847505338,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,Full model,full_model,,TRADES_COUNT_M,K3 CE flows,3887.5833333333335,3887.5833333333335,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,Full model,full_model,,UNEMPLOYMENT,K4 unemployment,0.09071342972874197,0.09071342972874197,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,Full model,full_model,,D_adv_exposure,K5 spatial-advantage exposure inequality,0.17083829604465697,0.17083829604465697,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,Full model,full_model,,D_resources,K6 economic-resource inequality,0.3881065329196303,0.3881065329196303,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,No CE--unemployment coupling,beta_cei,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.017669318278433307,0.018009254469126015,-0.00033993619069270717,-0.01887563821144485
+scr_0613_0539,baseline,Baseline CE,No CE--unemployment coupling,beta_cei,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6186011454279904,0.6191046847505338,-0.0005035393225434337,-0.0008133346978839266
+scr_0613_0539,baseline,Baseline CE,No CE--unemployment coupling,beta_cei,0.0,TRADES_COUNT_M,K3 CE flows,3885.9583333333335,3887.5833333333335,-1.625,-0.00041799747057930125
+scr_0613_0539,baseline,Baseline CE,No CE--unemployment coupling,beta_cei,0.0,UNEMPLOYMENT,K4 unemployment,0.10000000000000002,0.09071342972874197,0.009286570271258052,0.10237260565116806
+scr_0613_0539,baseline,Baseline CE,No CE--unemployment coupling,beta_cei,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.17040084653698306,0.17083829604465697,-0.00043744950767390933,-0.0025606056442927455
+scr_0613_0539,baseline,Baseline CE,No CE--unemployment coupling,beta_cei,0.0,D_resources,K6 economic-resource inequality,0.37111955783405665,0.3881065329196303,-0.016986975085573675,-0.043768845924895876
+scr_0613_0539,baseline,Baseline CE,No CE-driven demand reduction,gamma_need_savings,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.020576712169786376,0.018009254469126015,0.0025674577006603617,0.14256323394722548
+scr_0613_0539,baseline,Baseline CE,No CE-driven demand reduction,gamma_need_savings,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6194652532874749,0.6191046847505338,0.00036056853694110824,0.0005824031787192742
+scr_0613_0539,baseline,Baseline CE,No CE-driven demand reduction,gamma_need_savings,0.0,TRADES_COUNT_M,K3 CE flows,3888.5,3887.5833333333335,0.9166666666665151,0.00023579344494213095
+scr_0613_0539,baseline,Baseline CE,No CE-driven demand reduction,gamma_need_savings,0.0,UNEMPLOYMENT,K4 unemployment,0.09070802120068784,0.09071342972874197,-5.408528054126616e-06,-5.962213104142867e-05
+scr_0613_0539,baseline,Baseline CE,No CE-driven demand reduction,gamma_need_savings,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.1706517902703605,0.17083829604465697,-0.00018650577429646376,-0.0010917093972653644
+scr_0613_0539,baseline,Baseline CE,No CE-driven demand reduction,gamma_need_savings,0.0,D_resources,K6 economic-resource inequality,0.0002663274477015417,0.3881065329196303,-0.38784020547192877,-0.999313774893167
+scr_0613_0539,baseline,Baseline CE,No exposure update,move_prob,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.013612667295403119,0.018009254469126015,-0.004396587173722896,-0.24412931346663058
+scr_0613_0539,baseline,Baseline CE,No exposure update,move_prob,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6029084946512254,0.6191046847505338,-0.016196190099308394,-0.026160664701921826
+scr_0613_0539,baseline,Baseline CE,No exposure update,move_prob,0.0,TRADES_COUNT_M,K3 CE flows,3740.75,3887.5833333333335,-146.83333333333348,-0.03776982272619126
+scr_0613_0539,baseline,Baseline CE,No exposure update,move_prob,0.0,UNEMPLOYMENT,K4 unemployment,0.09095637258023159,0.09071342972874197,0.0002429428514896248,0.00267813541542807
+scr_0613_0539,baseline,Baseline CE,No exposure update,move_prob,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.1342769202890817,0.17083829604465697,-0.036561375755575276,-0.21401159100771278
+scr_0613_0539,baseline,Baseline CE,No exposure update,move_prob,0.0,D_resources,K6 economic-resource inequality,0.3928071324529833,0.3881065329196303,0.004700599533353,0.012111621739216602
+scr_0613_0539,baseline,Baseline CE,No waste-burden penalty,hotspot_burden_scale,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.018009254469126015,0.018009254469126015,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,No waste-burden penalty,hotspot_burden_scale,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6191046847505338,0.6191046847505338,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,No waste-burden penalty,hotspot_burden_scale,0.0,TRADES_COUNT_M,K3 CE flows,3887.5833333333335,3887.5833333333335,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,No waste-burden penalty,hotspot_burden_scale,0.0,UNEMPLOYMENT,K4 unemployment,0.09071342972874197,0.09071342972874197,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,No waste-burden penalty,hotspot_burden_scale,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.4098102254681715,0.17083829604465697,0.2389719294235145,1.3988194307570712
+scr_0613_0539,baseline,Baseline CE,No waste-burden penalty,hotspot_burden_scale,0.0,D_resources,K6 economic-resource inequality,0.3881065329196303,0.3881065329196303,0.0,0.0
+scr_0613_0539,baseline,Baseline CE,No CE-action observability,observability_prob,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.01859386672986124,0.018009254469126015,0.0005846122607352268,0.03246176732499858
+scr_0613_0539,baseline,Baseline CE,No CE-action observability,observability_prob,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6192581127114299,0.6191046847505338,0.0001534279608961242,0.00024782232218146627
+scr_0613_0539,baseline,Baseline CE,No CE-action observability,observability_prob,0.0,TRADES_COUNT_M,K3 CE flows,3890.3333333333335,3887.5833333333335,2.75,0.0007073803348265098
+scr_0613_0539,baseline,Baseline CE,No CE-action observability,observability_prob,0.0,UNEMPLOYMENT,K4 unemployment,0.09071112830932852,0.09071342972874197,-2.3014194134446386e-06,-2.5370216901249317e-05
+scr_0613_0539,baseline,Baseline CE,No CE-action observability,observability_prob,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.16944686188070227,0.17083829604465697,-0.0013914341639547079,-0.00814474381930293
+scr_0613_0539,baseline,Baseline CE,No CE-action observability,observability_prob,0.0,D_resources,K6 economic-resource inequality,0.4162148630571507,0.3881065329196303,0.0281083301375204,0.07242426416696482
+scr_0613_0539,ce_strong,Targeted CE expansion,Full model,full_model,,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.019210167959022195,0.019210167959022195,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,Full model,full_model,,CEI_SIM,K2 flow-based citywide CE index,0.6414573616780198,0.6414573616780198,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,Full model,full_model,,TRADES_COUNT_M,K3 CE flows,3999.6666666666665,3999.6666666666665,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,Full model,full_model,,UNEMPLOYMENT,K4 unemployment,0.09037813957482965,0.09037813957482965,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,Full model,full_model,,D_adv_exposure,K5 spatial-advantage exposure inequality,0.1707393907305407,0.1707393907305407,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,Full model,full_model,,D_resources,K6 economic-resource inequality,0.7731252322662249,0.7731252322662249,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE--unemployment coupling,beta_cei,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.018206150824709055,0.019210167959022195,-0.0010040171343131399,-0.052264877859993834
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE--unemployment coupling,beta_cei,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6409465926896127,0.6414573616780198,-0.0005107689884070732,-0.0007962633498735819
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE--unemployment coupling,beta_cei,0.0,TRADES_COUNT_M,K3 CE flows,4003.5,3999.6666666666665,3.833333333333485,0.00095841320109989
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE--unemployment coupling,beta_cei,0.0,UNEMPLOYMENT,K4 unemployment,0.10000000000000002,0.09037813957482965,0.009621860425170367,0.10646225253111767
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE--unemployment coupling,beta_cei,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.17051927003184866,0.1707393907305407,-0.00022012069869203899,-0.00128922035191171
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE--unemployment coupling,beta_cei,0.0,D_resources,K6 economic-resource inequality,0.7712134487472037,0.7731252322662249,-0.0019117835190212151,-0.0024727992785133876
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-driven demand reduction,gamma_need_savings,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.019047833873287737,0.019210167959022195,-0.00016233408573445782,-0.008450424672512651
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-driven demand reduction,gamma_need_savings,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6357845479152041,0.6414573616780198,-0.005672813762815698,-0.008843633408668462
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-driven demand reduction,gamma_need_savings,0.0,TRADES_COUNT_M,K3 CE flows,3990.7916666666665,3999.6666666666665,-8.875,-0.002218934911242049
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-driven demand reduction,gamma_need_savings,0.0,UNEMPLOYMENT,K4 unemployment,0.09046323178127191,0.09037813957482965,8.509220644226101e-05,0.0009415131347143385
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-driven demand reduction,gamma_need_savings,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.17096135966453926,0.1707393907305407,0.000221968933998562,0.0013000452429212778
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-driven demand reduction,gamma_need_savings,0.0,D_resources,K6 economic-resource inequality,0.0328090135157832,0.7731252322662249,-0.7403162187504416,-0.9575631306493841
+scr_0613_0539,ce_strong,Targeted CE expansion,No exposure update,move_prob,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.01379550653151198,0.019210167959022195,-0.005414661427510216,-0.28186433128518534
+scr_0613_0539,ce_strong,Targeted CE expansion,No exposure update,move_prob,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6278380903940706,0.6414573616780198,-0.013619271283949241,-0.021231763911930417
+scr_0613_0539,ce_strong,Targeted CE expansion,No exposure update,move_prob,0.0,TRADES_COUNT_M,K3 CE flows,3878.625,3999.6666666666665,-121.04166666666652,-0.03026293857820725
+scr_0613_0539,ce_strong,Targeted CE expansion,No exposure update,move_prob,0.0,UNEMPLOYMENT,K4 unemployment,0.09058242864408889,0.09037813957482965,0.00020428906925923362,0.002260381414796757
+scr_0613_0539,ce_strong,Targeted CE expansion,No exposure update,move_prob,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.1347428252173443,0.1707393907305407,-0.03599656551319641,-0.21082753750233485
+scr_0613_0539,ce_strong,Targeted CE expansion,No exposure update,move_prob,0.0,D_resources,K6 economic-resource inequality,0.782173012187337,0.7731252322662249,0.009047779921112165,0.011702864596577682
+scr_0613_0539,ce_strong,Targeted CE expansion,No waste-burden penalty,hotspot_burden_scale,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.019210167959022195,0.019210167959022195,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,No waste-burden penalty,hotspot_burden_scale,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6414573616780198,0.6414573616780198,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,No waste-burden penalty,hotspot_burden_scale,0.0,TRADES_COUNT_M,K3 CE flows,3999.6666666666665,3999.6666666666665,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,No waste-burden penalty,hotspot_burden_scale,0.0,UNEMPLOYMENT,K4 unemployment,0.09037813957482965,0.09037813957482965,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,No waste-burden penalty,hotspot_burden_scale,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.4043414322378836,0.1707393907305407,0.2336020415073429,1.3681789488626703
+scr_0613_0539,ce_strong,Targeted CE expansion,No waste-burden penalty,hotspot_burden_scale,0.0,D_resources,K6 economic-resource inequality,0.7731252322662249,0.7731252322662249,0.0,0.0
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-action observability,observability_prob,0.0,MEAN_LOCAL_CE_ACTIVATION,K1 mean local CE activation,0.017696811123347672,0.019210167959022195,-0.001513356835674523,-0.07877894457371569
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-action observability,observability_prob,0.0,CEI_SIM,K2 flow-based citywide CE index,0.6410728142040789,0.6414573616780198,-0.0003845474739408994,-0.0005994903111493685
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-action observability,observability_prob,0.0,TRADES_COUNT_M,K3 CE flows,4005.9166666666665,3999.6666666666665,6.25,0.0015626302191845414
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-action observability,observability_prob,0.0,UNEMPLOYMENT,K4 unemployment,0.09038390778693879,0.09037813957482965,5.768212109139026e-06,6.382308899532145e-05
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-action observability,observability_prob,0.0,D_adv_exposure,K5 spatial-advantage exposure inequality,0.17081525845338272,0.1707393907305407,7.58677228420157e-05,0.00044434809139855334
+scr_0613_0539,ce_strong,Targeted CE expansion,No CE-action observability,observability_prob,0.0,D_resources,K6 economic-resource inequality,0.7675834522950082,0.7731252322662249,-0.005541779971216632,-0.0071680236690817275

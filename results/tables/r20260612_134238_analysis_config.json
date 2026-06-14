@@ -1,0 +1,88 @@
+{
+  "run_group": "r20260612_134238",
+  "root": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit",
+  "base_seed": 12345,
+  "last_window": 24,
+  "run_main_replicated_analysis": true,
+  "run_beta_sensitivity": true,
+  "run_observability_sensitivity": true,
+  "use_sequential_stopping": true,
+  "min_reps": 10,
+  "max_reps": 100,
+  "check_every": 5,
+  "fixed_n_reps_if_no_stopping": 20,
+  "rel_ci_tol": 0.05,
+  "rel_ci_min_denom": 0.0001,
+  "abs_ci_tol": 0.0001,
+  "convergence_metrics": [
+    "MEAN_LOCAL_CE_ACTIVATION",
+    "CEI_SIM",
+    "UNEMPLOYMENT",
+    "D_adv_exposure",
+    "D_resources",
+    "MEAN_RESOURCES"
+  ],
+  "sensitivity_n_reps": 5,
+  "scenarios": [
+    "ce_off",
+    "ce_light",
+    "baseline",
+    "ce_strong"
+  ],
+  "scenario_labels": {
+    "ce_off": "Linear reference",
+    "ce_light": "Low-intensity CE",
+    "baseline": "Status-quo CE",
+    "ce_strong": "Targeted CE expansion",
+    "ce_inclusive_strong": "Inclusive CE expansion"
+  },
+  "default_unemp_beta_cei": -0.015,
+  "default_observability_prob": 0.5,
+  "beta_cei_values": [
+    0.005,
+    0.0,
+    -0.005,
+    -0.015,
+    -0.03
+  ],
+  "beta_sensitivity_scenarios": [
+    "ce_light",
+    "baseline",
+    "ce_strong"
+  ],
+  "observability_values": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "observability_sensitivity_scenarios": [
+    "baseline",
+    "ce_strong"
+  ],
+  "save_spatial_figures": false,
+  "spatial_figure_interval": 12,
+  "spatial_figure_cycles": [
+    0,
+    120,
+    240
+  ],
+  "save_k1_spatial_data": true,
+  "k1_spatial_last_window": 24,
+  "kpi_revision": {
+    "K1": "mean local CE activation; compact cell-level grids saved per run",
+    "K2": "flow-based citywide CE index; excludes K1 to avoid double-counting"
+  },
+  "outputs": {
+    "manifest_csv": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\r20260612_134238_run_manifest.csv",
+    "runtime_by_task_csv": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\r20260612_134238_runtime_by_task.csv",
+    "runtime_summary_csv": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\r20260612_134238_runtime_summary.csv",
+    "convergence_csv": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\r20260612_134238_convergence_diagnostics.csv",
+    "stopping_json": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\r20260612_134238_stopping_decision.json",
+    "runs_dir": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\runs",
+    "tables_dir": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables",
+    "experiment_dir": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\experiments\\r20260612_134238"
+  },
+  "model_framing": "empirically grounded scenario-comparison model; not a calibrated point forecast",
+  "replication_design": "sequential stopping for main scenarios; smaller fixed-replication one-at-a-time sensitivity analyses",
+  "demographic_framing": "representative household decision units with household-size attribute; neighborhood-level population and income grounding, not full cell-specific demographic calibration"
+}

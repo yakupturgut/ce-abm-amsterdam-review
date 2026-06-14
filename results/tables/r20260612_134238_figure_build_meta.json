@@ -1,0 +1,14 @@
+{
+  "run_group": "r20260612_134238",
+  "manifest": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\tables\\r20260612_134238_run_manifest.csv",
+  "figures_dir": "C:\\Sanja_Cooperation_2\\Journal_of_cleaner_production_revision\\github_reposit\\results\\figures\\r20260612_134238",
+  "last_window": 24,
+  "delta_convention": "final_minus_initial",
+  "excluded_main_metrics": [
+    "D_labor_income",
+    "MEAN_LABOR_INCOME",
+    "P_voice_corr"
+  ],
+  "k1_spatial_heatmaps": true,
+  "duration_sec": 39.97585720001371
+}

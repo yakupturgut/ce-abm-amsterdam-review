@@ -1,0 +1,24 @@
+check,value,diagnostic_type,interpretation
+grid_shape,60 x 60,input_structure,Regular grid used as computational support.
+grid_is_60x60,True,verification,Expected manuscript grid size.
+n_households_initialized,4000,input_structure,Number of representative household agents in initial population.
+initial_resource_mean,83.67387260072711,input_distribution,Mean initialized accumulated resources.
+initial_resource_gini,0.2948168287964405,input_distribution,Initial resource inequality among synthetic households.
+recognition_mean,0.28486369206397344,input_distribution,Mean initial recognition.
+n_unique_hub_cells,46,infrastructure,Unique grid cells containing repair cafés / circular service hubs.
+n_unique_container_cells,848,infrastructure,Unique grid cells containing sorting containers.
+n_unique_recycling_cells,6,infrastructure,Unique grid cells containing recycling centres.
+n_unique_waste_cells,4,infrastructure,Unique grid cells containing waste hotspots.
+n_raw_hub_records,47,infrastructure_metadata,Raw mapped hub records before grid-cell deduplication.
+n_raw_container_records,27456,infrastructure_metadata,Raw mapped container records before grid-cell deduplication.
+n_raw_recycling_records,6,infrastructure_metadata,Raw mapped recycling records before grid-cell deduplication.
+n_raw_waste_records,4,infrastructure_metadata,Raw mapped waste-hotspot records before grid-cell deduplication.
+mean_household_distance_to_hub,6.795424765115042,spatial_access,Average grid distance from households to nearest hub.
+mean_household_distance_to_container,3.4029818399328033,spatial_access,Average grid distance from households to nearest sorting container.
+mean_household_distance_to_recycling,7.11101349020083,spatial_access,Average grid distance from households to nearest recycling centre.
+mean_household_distance_to_waste,8.540231395002763,spatial_burden,Average grid distance from households to nearest waste hotspot.
+advantage_plus_min,0.0,verification,"Normalized advantage should be within [0,1]."
+advantage_plus_max,1.0,verification,"Normalized advantage should be within [0,1]."
+household_advantage_mean,0.45268695632914396,spatial_access,Mean normalized spatial-advantage exposure among households.
+household_advantage_gini,0.14264765140194519,spatial_access,Initial inequality in normalized spatial-advantage exposure.
+npz_available_layers,ptype; stock; regen; hub_cells; waste_cells; container_cells; recycling_cells; hub_fracs; cell_code; crs; version,input_metadata,Layers available in the preprocessed grid file.

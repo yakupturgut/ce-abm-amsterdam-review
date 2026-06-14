@@ -1,0 +1,206 @@
+{
+  "created": "2026-06-12 18:44:52",
+  "seed": 12376,
+  "base_seed": 12376,
+  "cycles": 240,
+  "run_dir": "r20260612_134238_m_r031_m_ce_light",
+  "policy_name": "ce_light",
+  "policy_cfg": {
+    "CE_ACTIVE": true,
+    "ETA_KNOW": 0.015,
+    "ETA_OPP": 0.015,
+    "ETA_INC": 0.03,
+    "HUB_ACTIVE_FRACTION": 0.5,
+    "SEC_TRADE_MULT": 0.84,
+    "HUB_TRADES_AS_WEALTH_BONUS": 0.13999999999999999,
+    "GAMMA_NEED_SAVINGS": 0.42,
+    "SEED": 12376,
+    "REPLICATE": 31,
+    "RUN_TAG": "m",
+    "_RUN_TAG": "m",
+    "UNEMP_BETA_CEI": -0.015,
+    "OBSERVABILITY_PROB": 0.5,
+    "SAVE_SPATIAL_FIGURES": false,
+    "SPATIAL_FIGURE_INTERVAL": 12,
+    "SPATIAL_FIGURE_CYCLES": [
+      0,
+      120,
+      240
+    ],
+    "SAVE_K1_SPATIAL_DATA": true,
+    "K1_SPATIAL_LAST_WINDOW": 24
+  },
+  "model_framing": "empirically grounded scenario-comparison model; outputs are not calibrated forecasts",
+  "validation_status": "not calibrated against observed Amsterdam output time series",
+  "seasonality": {
+    "enabled": false,
+    "SEASON_REGEN": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "SEASON_TRADE": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "household_representation": {
+    "agent_type": "representative household decision unit",
+    "biological_demography_enabled": false,
+    "household_size_dynamics_enabled": true,
+    "household_size_change_prob": 0.002,
+    "household_size_need_elasticity": 0.75
+  },
+  "recognition": {
+    "reset_initial_recognition": true,
+    "initial_recognition_distribution": "Beta(2.0, 5.0)",
+    "observability_prob": 0.5
+  },
+  "kpi_definitions": {
+    "K1": {
+      "name": "mean local CE activation",
+      "output_columns": [
+        "MEAN_LOCAL_CE_ACTIVATION",
+        "CE_INTENSITY"
+      ],
+      "definition": "Spatial average of the grid-cell CE-intensity field. The field is updated from local CE flows using local normalization and temporal memory."
+    },
+    "K2": {
+      "name": "flow-based citywide CE index",
+      "output_columns": [
+        "CEI_SIM"
+      ],
+      "definition": "Weighted citywide index combining normalized delivered CE material flows and normalized repair visits. Mean local CE activation is excluded to avoid double-counting.",
+      "component_columns": [
+        "CE_MATERIAL_FLOW_NORM",
+        "CE_REPAIR_VISIT_NORM"
+      ],
+      "weights": {
+        "material_flow": 0.6,
+        "repair_visits": 0.4,
+        "local_activation": 0.0
+      }
+    }
+  },
+  "k1_spatial_data": {
+    "enabled": true,
+    "file": "K1_spatial_ce_intensity.npz",
+    "last_window": 24,
+    "stored_arrays": [
+      "initial_grid",
+      "final_grid",
+      "change_grid",
+      "all_months_mean_grid",
+      "all_months_sd_grid",
+      "last_window_mean_grid",
+      "last_window_temporal_sd_grid"
+    ]
+  },
+  "advantage_field": {
+    "raw_min": -1.0606884057971013,
+    "raw_max": 1.8904761904761904,
+    "normalized_min": 0.0,
+    "normalized_max": 1.0,
+    "gini_input": "normalized household spatial-advantage exposure A_h_plus"
+  },
+  "params": {
+    "ENV_WEIGHT": 0.75,
+    "SOCIAL_WEIGHT": 0.6,
+    "FIN_WEIGHT": 0.2,
+    "MOTIVE_CONC": 3.0,
+    "NEED": 3.0,
+    "HUB_TRADES_AS_WEALTH_BONUS": 0.13999999999999999,
+    "EXCLUSION_THRESHOLD": 1.0,
+    "MAX_PATCH_CAPACITY": 12,
+    "N_HOUSEHOLDS_SCALE": 1.0,
+    "HUB_ACTIVE_FRACTION": 0.5,
+    "NEW_HUB_COUNT": 0,
+    "NEW_HUB_NEAR_SECONDARY": false,
+    "ADV_HUB_WEIGHT": 1.0,
+    "ADV_SEC_BONUS": 0.5,
+    "ADV_WASTE_PENALTY": 1.2,
+    "ADV_CONT_WEIGHT": 0.6,
+    "ADV_RECYCL_WEIGHT": 0.5,
+    "MOVE_PROB": 0.1,
+    "ETA_KNOW": 0.015,
+    "ETA_OPP": 0.015,
+    "ETA_INC": 0.03,
+    "LAMBDA_PLUS": 0.1,
+    "LAMBDA_MINUS": 0.05,
+    "CE_MEMORY": 0.8,
+    "SAVE_K1_SPATIAL_DATA": true,
+    "K1_SPATIAL_LAST_WINDOW": 24,
+    "BULKY_SHARE": 0.15,
+    "BULKY_THRESHOLD": 4.0,
+    "BULKY_CE_MULT": 2.0,
+    "BASE_PRIMARY_WAGE": 1.0,
+    "ALPHA_PRIMARY_DROP": 0.5,
+    "PRIMARY_WAGE_FLOOR": 0.2,
+    "BASE_CE_WAGE": 0.8,
+    "CE_WAGE_SLOPE": 1.0,
+    "SEASON_REGEN": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "SEASON_TRADE": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "JOB_CE_SENSITIVITY": 0.12,
+    "JOB_DISP_SENSITIVITY": 0.06,
+    "CEI_W_TRADE": 0.6,
+    "CEI_W_REPAIR": 0.4,
+    "CEI_W_INT": 0.0,
+    "UNEMP_REF": 0.1,
+    "UNEMP_BETA_CEI": -0.015,
+    "UNEMP_MAX": 0.35,
+    "CEI_REF": 0.0,
+    "RISK_UNEMP_MULT": 1.3,
+    "GAMMA_NEED_SAVINGS": 0.42,
+    "CE_ACTIVE": true,
+    "REPRO_THRESHOLD": 150.0,
+    "REPRO_SHARE": 0.3,
+    "REPRO_PROB": 0.006,
+    "REPRO_MIN_AGE": 22.0,
+    "REPRO_MAX_AGE": 40.0
+  }
+}
